@@ -1,0 +1,127 @@
+/* to make the header a notable color and centered */
+header {
+    background-color: rgb(0, 50, 0);
+    text-align: center;
+}
+
+/* to make the h1 headers a bit bigger and centered */
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* to make the h2 headers a bit smaller and centered */
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* to make the h3 headers a bit smaller and centered */
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* to make the paragraphs a bit smaller and centered (added to remove bad <br> when screen is small)*/
+p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* to make the background black and the most text white */
+body {
+    background-color: #000000;
+    color:white
+}
+
+/* to make the change the page text */
+* {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* to make the images have rounded corners and be centered */
+img {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* to make the navigation link text a notable color */
+nav{
+    color:rgb(173, 173, 255);
+}
+
+/* to make the links a notable color */
+a{
+    color:rgb(209, 163, 255);
+}
+
+/* footer class to make the font size smaller */
+footer{
+    font-size: 15px;
+}
+
+/* Hollow Knight Images class*/
+.hk_Images {
+  display: flex;                /* used flex to make the images show in a row when centered */
+  justify-content: center;
+  gap: 4px;
+}
+.hk_Images img {
+  border-radius: 8px;
+  width: 200px;
+  height: auto;
+  margin: 0;
+}
+
+/* the game titles class */
+.gameTitles {
+    color:gold
+}
+
+/* id for the game list description to make it pink */
+#gameListDescription {
+    color: rgb(242, 99, 242);
+}
+
+/* id for the game genre list description to make it red */
+#gameGenreDescription {
+    color: rgb(255, 102, 102);
+}
+
+
+/* media query for smaller screens to make the font size smaller */
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  body {
+    font-size: 16px;
+    padding: 0 12px;
+  }
+
+  /* stack the Hollow Knight images instead of forcing them side by side */
+  .hk_Images {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hk_Images img {
+    width: 80%;
+    max-width: 280px;
+  }
+}

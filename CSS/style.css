@@ -1,7 +1,6 @@
 /* to make the header a notable color and centered */
 header {
     background-color: rgb(0, 50, 0);
-    text-align: center;
 }
 
 /* to make the h1 headers a bit bigger and centered */
@@ -54,11 +53,6 @@ img {
 /* to make the navigation link text a notable color */
 nav{
     color:rgb(173, 173, 255);
-}
-
-/* to make the links a notable color */
-a{
-    color:rgb(209, 163, 255);
 }
 
 /* footer class to make the font size smaller */

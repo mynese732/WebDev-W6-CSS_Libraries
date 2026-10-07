@@ -8,61 +8,63 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head> 
   <body> <!-- this is where everything is displayed -->
-    <header> 
+    <div class="container mt-4">
+        <header class="text-center mb-4"> 
         <h1>My Favorite Video Games</h1> <!-- this is the main heading -->
             <p> <!-- short description for the main heading -->
                 Since I was a kid, I have loved playing video games. 
                 Over the years, several of the games I have played have stood out.
             </p>
-    </header>
-    <main>
-        <article>
-            <section>
-                <h2>My top 5 games:</h2> <!-- heading for the list of favorite games -->
-                    <h3>(Most favorite first and as of 2026)</h3> <!-- description for the list -->
-                        <p id="gameListDescription">While the variety of games I have played has expanded over the years, playing and enjoying these games has been a great source of entertainment.</p> <!-- short description for the list -->
-                        <ol> <!-- the numbered list of favorite games -->
-                            <li>Hollow Knight</li>
-                            <li>Hollow Knight: Silksong</li>
-                            <li>Destiny 2</li>
-                            <li>Terraria</li>
-                            <li>Minecraft</li>
-                        </ol>
-            </section>
-            <section>
-                <h2>The Game Genres</h2> <!-- Next heading for the genres the games are -->
-                    <p id="gameGenreDescription">While these games span across various genres, they are mostly associated with the genres listed below:</p> <!-- short description for the list -->
-                    <ul> <!-- bulleted list for the game genres -->
-                        <li>Metroidvania (Hollow Knight, Hollow Knight: Silksong)</li>
-                        <li>First-Person Shooter (Destiny 2)</li>
-                        <li>Sandbox (Terraria & Minecraft)</li>
-                    </ul>
-            </section>
-        </article>
-        <article>
-            <section>
-                <h2>About these games</h2> <!-- Next header for the game descriptions -->
-                    <h3 class="gameTitles">Hollow Knight and Hollow Knight: Silksong</h3> <!-- game titles -->
-                        <!-- images for the games -->
-                         <div class="hk_Images">
-                            <img alt="An image of a Hollow Knight game poster" src="/images/hk1.jpg"/>
-                            <img alt="An image of a Hollow Knight:Silksong game poster" src="/images/hk2.jpg"/>
-                         </div>
-                            <p> <!-- short description for the game -->
-                                Hollow Knight and it's sequel, Hollow Knight: Silksong, are 2d metroidvania games that are known for their beautiful art style, challenging gameplay, and amazing music.
-                                The games take place in fallen kingdoms that the player must explore and uncover the secrets within. Due to their difficulty, these games are not for everyone, even 
-                                earning the label "souls like" in reference to the difficult Dark Souls series created by FromSoftware. I fell in love with the first game in high school and the
-                                second game years later when it came out in 2025. I have struggled and succeeded in getting even the most difficult achievements in both games.
-                            </p>
-                </section>
-        </article>
-        <nav> <!-- navigation link to the second page -->
-            <h3>To learn more about these games, go to page 2</h3>
-            <h3><a href="page2.html">Page 2</a></h3>
-        </nav>
-    </main>
-    <footer> <!-- footer for credit -->
-        <p>Created by Eric Mynes &mdash; 2026</p>
-    </footer>
+        </header>
+        <main>
+            <article>
+                <div class="row">
+                    <section class="col-md-6 mb-4">
+                        <h2>My top 5 games:</h2> <!-- heading for the list of favorite games -->
+                            <p id="gameListDescription">While the variety of games I have played has expanded over the years, playing and enjoying these games has been a great source of entertainment.</p> <!-- short description for the list -->
+                            <ol> <!-- the numbered list of favorite games -->
+                                <li>Hollow Knight</li>
+                                <li>Hollow Knight: Silksong</li>
+                                <li>Destiny 2</li>
+                                <li>Terraria</li>
+                                <li>Minecraft</li>
+                            </ol>
+                    </section>
+                    <section class="col-md-6 mb-4">
+                        <h2>The Game Genres</h2> <!-- Next heading for the genres the games are -->
+                            <p id="gameGenreDescription">While these games span across various genres, they are mostly associated with the genres listed below:</p> <!-- short description for the list -->
+                            <ul> <!-- bulleted list for the game genres -->
+                                <li>Metroidvania (Hollow Knight, Hollow Knight: Silksong)</li>
+                                <li>First-Person Shooter (Destiny 2)</li>
+                                <li>Sandbox (Terraria & Minecraft)</li>
+                            </ul>
+                    </section>
+                </div>
+            </article>
+            <article>
+                <section>
+                    <h2>About these games:</h2> <!-- Next header for the game descriptions -->
+                        <h3 class="gameTitles">Hollow Knight and Hollow Knight: Silksong</h3> <!-- game titles -->
+                            <!-- images for the games -->
+                            <div class="hk_Images">
+                                <img alt="An image of a Hollow Knight game poster" src="/images/hk1.jpg"/>
+                                <img alt="An image of a Hollow Knight:Silksong game poster" src="/images/hk2.jpg"/>
+                            </div>
+                                <p> <!-- short description for the game -->
+                                    Hollow Knight and it's sequel, Hollow Knight: Silksong, are 2d metroidvania games that are known for their beautiful art style, challenging gameplay, and amazing music.
+                                    The games take place in fallen kingdoms that the player must explore and uncover the secrets within. Due to their difficulty, these games are not for everyone, even 
+                                    earning the label "souls like" in reference to the difficult Dark Souls series created by FromSoftware. I fell in love with the first game in high school and the
+                                    second game years later when it came out in 2025. I have struggled and succeeded in getting even the most difficult achievements in both games.
+                                </p>
+                    </section>
+            </article>
+            <nav> <!-- navigation link to the second page -->
+                <h3>To learn more about these games, go to <a href="page2.html" class="btn btn-primary">Page 2</a></h3>
+            </nav>
+        </main>
+        <footer> <!-- footer for credit -->
+            <p>Created by Eric Mynes &mdash; 2026</p>
+        </footer>
+    </div>
   </body> 
 </html>

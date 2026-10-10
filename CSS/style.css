@@ -1,5 +1,5 @@
 /* to make the header a notable color and centered */
-header {
+header, footer {
     background-color: rgb(0, 50, 0);
 }
 
